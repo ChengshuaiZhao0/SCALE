@@ -10,11 +10,12 @@
 
 ## Citation
 
-```text
-@article{li2025window,
-  title={Window Token Concatenation for Efficient Visual Large Language Models},
-  author={Li, Yifan and Bao, Wentao and Ye, Botao and Tan, Zhen and Chen, Tianlong and Liu, Huan and Kong, Yu},
-  journal={arXiv preprint arXiv:2504.04024},
+```tex
+@article{zhao2025scale,
+  title={Scale: Towards collaborative content analysis in social science with large language model agents and human intervention},
+  author={Zhao, Chengshuai and Tan, Zhen and Wong, Chau-Wai and Zhao, Xinyan and Chen, Tianlong and Liu, Huan},
+  journal={arXiv preprint arXiv:2502.10937},
   year={2025}
 }
 ```
+
