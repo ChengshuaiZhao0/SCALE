@@ -1,5 +1,3 @@
-​    
-
 # SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human 
 
 [![Paper](https://img.shields.io/badge/Paper-ArXiv-green)](https://arxiv.org/pdf/2502.10937)
@@ -8,7 +6,7 @@
 
 - [5/16/2025] We create this Github repo. The code will be available very soon!
 - [5/15/2025] Our paper has been accepted by at **ACL 2025** main conference. 🚀
-- [2/16/2025] We upload [Paper](https://arxiv.org/pdf/2502.10937) to ArXiv.
+- [2/16/2025] We upload [paper](https://arxiv.org/pdf/2502.10937) to ArXiv.
 
 ## Citation
 
