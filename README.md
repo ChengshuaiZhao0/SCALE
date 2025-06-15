@@ -1,4 +1,4 @@
-# SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human 
+# SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention
 
 [![Paper](https://img.shields.io/badge/Paper-ArXiv-green)](https://arxiv.org/pdf/2502.10937)
 
