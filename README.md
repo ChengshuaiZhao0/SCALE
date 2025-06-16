@@ -1,6 +1,6 @@
 # SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-b31b1b.svg)](https://arxiv.org/abs/2502.10937)	[![License: MIT](https://img.shields.io/badge/License-MIT-greeen.svg)](https://opensource.org/licenses/MIT)
+[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-b31b1b.svg)](https://arxiv.org/abs/2502.10937)
 
 This repository contains the official Python implementation of the framework described in the paper **"SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"**, accepted at ACL 2025.
 
@@ -77,7 +77,6 @@ scale-project/
 
     ```bash
     git clone [https://github.com/ChengshuaiZhao0/SCALE.git](https://github.com/ChengshuaiZhao0/SCALE.git)
-    cd SCALE
     ```
 
 2.  **Create a Conda Environment (Recommended)**
@@ -143,7 +142,3 @@ If you use this framework in your research, please cite our paper:
   year={2025}
 }
 ```
-
-## License
-
-This project is licensed under the MIT License.
