@@ -1,34 +1,47 @@
 # SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention
 
-[![Paper](https://img.shields.io/badge/Paper-ArXiv-green)](https://arxiv.org/pdf/2502.10937)
+[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-b31b1b.svg)](https://arxiv.org/abs/2502.10937)	[![License: MIT](https://img.shields.io/badge/License-MIT-greeen.svg)](https://opensource.org/licenses/MIT)
+
+This repository contains the official Python implementation of the framework described in the paper **"SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"**, accepted at ACL 2025.
 
 ## News
+- **[06/16/2025]** Initial implementation of the SCALE framework is now available!
+- **[05/16/2025]** GitHub repository created. Code release is coming soon.
+- **[05/15/2025]** Our paper has been accepted by the main conference of **ACL 2025**. 🚀
+- **[02/16/2025]** Our paper is available on [arXiv](https://arxiv.org/abs/2502.10937).
 
-- [6/16/2025] We upload an exmple implementation of SCALE!
-- [5/16/2025] We create this Github repo. The code will be available very soon!
-- [5/15/2025] Our paper has been accepted by at **ACL 2025** main conference. 🚀
-- [2/16/2025] We upload [paper](https://arxiv.org/pdf/2502.10937) to ArXiv.
+## Introduction
 
-## Intro
+Content analysis is a foundational research method in the social sciences for breaking down unstructured text into structured, theory-informed categories. This process is often manual, labor-intensive, and time-consuming.
 
-This repository contains the Python implementation of the framework described in the paper: **"SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"**.
+To address these challenges, we introduce **SCALE**, a novel multi-agent framework that effectively **S**imulates **C**ollaborative **A**nalysis via **L**arge language model ag**E**nts. By harnessing LLM agents with distinct personas and incorporating various modes of human intervention, SCALE automates the content analysis workflow to produce reliable, high-quality annotations at scale.
 
-SCALE is a novel multi-agent framework that effectively **<u>S</u>**imulates **<u>C</u>**ollaborative <u>**A**</u>nalysis via <u>**L**</u>arge language model ag***E***nts. It is designed to automate the rigorous and labor-intensive process of content analysis, a critical research method in the social sciences. The system mimics key phases of manual content analysis, including independent text coding, collaborative discussion to resolve discrepancies, and dynamic evolution of the coding rules (the "codebook").
+![SCALE](figure/main.pdf)
+## The SCALE Workflow
 
-By harnessing LLM agents with distinct personas and incorporating various modes of human intervention, SCALE aims to achieve human-approximated performance, reduce subjectivity, and enable high-quality, large-scale textual analysis.
+The SCALE framework mirrors the process of real-world content analysis through four primary steps, which form an iterative cycle for analysis and refinement.
 
-## Features
+1.  **Coder Simulation**
+    The process begins by configuring multiple LLM agents, each emulating a seasoned social scientist with a distinct, real-world-based persona. An initial codebook is also established, which can either be predefined by human experts or created from scratch by the agents.
 
-- **Multi-Agent Simulation**: Deploys multiple LLM agents, each with a unique persona derived from real-world social scientists, to foster diverse perspectives and robust discussions.
-- **Dynamic Three-Phase Workflow**: Faithfully simulates the core workflow of traditional content analysis:
-  1. Bot Annotation: Agents independently annotate text based on a shared codebook.
-  2. Agent Discussion: Agents engage in multi-round discussions to resolve inconsistencies in their annotations.
-  3. Codebook Evolution: Agents collaboratively refine and update the codebook based on insights gained from their discussions, which is then used in subsequent cycles.
-- **Human-intervention**: Provides a flexible portal for human experts to intervene in the process. The intervention can be configured by scope and role:
-  - Scope: `targeted` (discussion phase only) or `extensive` (discussion and codebook evolution phase).
-  - Authority: `collaborative` (agents can accept or reject advice) or `directive` (agents must follow instructions).
-- **Highly Configurable**: The entire simulation—including agent personas, prompts, datasets, and intervention strategies—is controlled via easy-to-edit JSON configuration files.
-- **Modular & Extensible**: Built with a clean, object-oriented architecture that separates agents, simulation logic, and utilities, making the code easy to understand, maintain, and extend for future research.
+2.  **Bot Annotation**
+    Each agent autonomously annotates an identical batch of text entries. In this phase, agents work independently, strictly following the guidelines in the current codebook to classify each text into a discrete category.
+
+3.  **Agent Discussion**
+    When disagreements in annotations arise, the agents initiate a structured, multi-round discussion to resolve their differences. They exchange reasoning and update their annotations based on peer feedback until they converge on a unanimous decision.
+
+4.  **Codebook Evolution**
+    In the final phase of the cycle, agents collaboratively refine and update the codebook based on insights gained from their discussions. This can involve enriching rules with new examples or modifying the categories themselves. This newly refined codebook is then used for the next cycle of annotation, ensuring continuous improvement.
+
+## Key Features
+
+-   **Multi-Agent Simulation**: Deploys multiple LLM agents, each with a unique, configurable persona to foster diverse perspectives and robust discussions.
+-   **Praxis-Informed Design**: The workflow is developed in close collaboration with social scientists, ensuring it faithfully reflects the principles and standards of manual content analysis.
+-   **Human Intervention**: Provides a flexible portal for human experts to intervene in the. The intervention can be configured by both scope and role:
+    -   **Scope**: `targeted` (discussion phase only) or `extensive` (discussion and codebook evolution phases).
+    -   **Authority**: `collaborative` (agents may accept or reject advice) or `directive` (agents must follow instructions).
+-   **Highly Configurable**: The entire simulation—including agent personas, prompts, datasets, and intervention strategies—is controlled via easy-to-edit JSON configuration files.
+-   **Modular & Extensible**: Built with a clean, object-oriented architecture that separates agents, simulation logic, and utilities, making the code easy to understand and extend.
 
 ## Project Structure
 
@@ -60,69 +73,69 @@ scale-project/
 
 ## Setup and Installation
 
-1. **Clone the Repository**
+1.  **Clone the Repository**
 
-   ```Bash
-   git clone https://github.com/ChengshuaiZhao0/SCALE.git
-   cd SCALE
-   ```
+    ```bash
+    git clone [https://github.com/ChengshuaiZhao0/SCALE.git](https://github.com/ChengshuaiZhao0/SCALE.git)
+    cd SCALE
+    ```
 
-2. **Create a Virtual Environment (Recommended)**
+2.  **Create a Conda Environment (Recommended)**
 
-   ```Bash
-   conda create -n scale python==3.12
-   conda activate scale
-   ```
+    ```bash
+    conda create -n scale python=3.12
+    conda activate scale
+    ```
 
-3. **Install Dependencies** Install all required Python packages using the `requirements.txt` file.
+3.  **Install Dependencies**
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Configuration
 
-The simulation is controlled by a JSON file located in the `configs/` directory. You can create new configuration files for different datasets or experiments.
+The simulation is controlled by a JSON file located in the `configs/` directory (e.g., `configs/CES.json`).
 
-### Key Configuration Options (`configs/config.json`):
+#### Key Configuration Options:
 
-- `api_key`: You must add your OpenAI API key here.
-- `dataset_name`: The name of the dataset, which should match the folder name in `data/`.
-- `settings`:
-  - `agents`: The number of social scientist agents to simulate.
-  - `rounds`: The maximum number of discussion rounds for both text annotation and codebook evolution.
-  - `chunk_size`: The number of text entries to process in each full cycle.
-  - `model`: The OpenAI model to use (e.g., `gpt-4o-mini`).
-  - `intervention`:
-    - `enabled`: Set to `true` to allow human intervention.
-    - `scope`: `targeted` or `extensive`.
-    - `authority`: `collaborative` or `directive`.
-- `persona`: Define the background and personality for each agent. The system will cycle through these personas if `agents` > number of personas.
-- `prompt`: Contains the text for all system prompts used by the agents (`coding`, `discussion`, `judge`, `mediator`, `collaborative`, `directive`, etc.).
-- `codebook_example`: Provides an example of an `original` and `updated` codebook to guide the agents during the evolution phase.
+-   `api_key`: Add your OpenAI API key here.
+-   `dataset_name`: The name of the dataset, which must match the folder name in `data/`.
+-   `settings`:
+    -   `agents`: The number of social scientist agents to simulate.
+    -   `rounds`: The maximum number of discussion rounds.
+    -   `chunk_size`: The number of text entries to process in each cycle.
+    -   `model`: The OpenAI model to use (e.g., `gpt-4o-mini`).
+    -   `intervention`:
+        -   `enabled`: Set to `true` to allow human intervention.
+        -   `scope`: `targeted` or `extensive`.
+        -   `authority`: `collaborative` or `directive`.
+-   `persona`: Define the background and personality for each agent.
+-   `prompt`: Contains the text for all system prompts used by the agents.
+-   `codebook_example`: Provides an example of an `original` and `updated` codebook to guide the agents during the evolution phase.
 
-### Data Preparation:
+#### Data Preparation:
 
-- Place your dataset as an `.xlsx` file inside a folder in `data/` (e.g., `data/CES/data.xlsx`).
-- The dataset file should contain a column with the Text to be analyzed.
-- Place the initial codebook in a file named `original_rules.txt` within the same folder.
+-   Place your dataset as an `.xlsx` file inside a corresponding folder in `data/` (e.g., `data/CES/data.xlsx`).
+-   The Excel file must contain a column named `Text` with the content to be analyzed.
+-   Place the initial codebook in a file named `original_rules.txt` within the same folder.
 
 ## How to Run
 
-To run the simulation, execute the `main.py` script from the root directory, specifying the dataset you wish to process.
+To run the simulation, execute the `main.py` script from the root directory and specify the dataset you wish to process.
 
 ```bash
 python main.py
 ```
 
-- All output, including detailed logs and final results, will be saved to a timestamped folder within the `results/` directory.
-- If intervention is enabled, the program will prompt for your input in the terminal at the appropriate points in the simulation.
+-   All output, including detailed logs and final results, will be saved to a timestamped folder within the `results/` directory.
+-   If intervention is enabled in the config, the program will prompt you for input in the terminal at the appropriate steps.
 
 ## Citation
 
-If you found it useful, please feel free to  cite our work:
+If you use this framework in your research, please cite our paper:
 
-```tex
+```bibtex
 @article{zhao2025scale,
   title={Scale: Towards collaborative content analysis in social science with large language model agents and human intervention},
   author={Zhao, Chengshuai and Tan, Zhen and Wong, Chau-Wai and Zhao, Xinyan and Chen, Tianlong and Liu, Huan},
@@ -133,4 +146,4 @@ If you found it useful, please feel free to  cite our work:
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the MIT License.
