@@ -5,7 +5,7 @@
 This repository contains the official Python implementation of the framework described in the paper **"SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"**, accepted at ACL 2025.
 
 ## News
-- **[06/16/2025]** Initial implementation of the SCALE framework is now available!
+- **[06/16/2025]** An example implementation of the SCALE framework is now available!
 - **[05/16/2025]** GitHub repository created. Code release is coming soon.
 - **[05/15/2025]** Our paper has been accepted by the main conference of **ACL 2025**. 🚀
 - **[02/16/2025]** Our paper is available on [arXiv](https://arxiv.org/abs/2502.10937).
