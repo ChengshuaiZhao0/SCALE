@@ -56,7 +56,7 @@ scale-project/
 ├── data/                     # Directory for datasets
 │   └── EXP/                  # An Example dataset
 │       ├── data.xlsx         # The text data for analysis
-│       └── codebook.txt	  # The initial codebook
+│       └── codebook.txt      # The initial codebook
 ├── results/                  # Output directory for logs and results
 ├── agents/                   # Contains all agent class definitions
 │   ├── base_agent.py
