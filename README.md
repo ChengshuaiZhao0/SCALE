@@ -1,6 +1,6 @@
 # SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-b31b1b.svg)](https://arxiv.org/abs/2502.10937)
+[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-red.svg)](https://arxiv.org/abs/2502.10937) [![GitHub](https://img.shields.io/badge/GitHub-SCALE-blue.svg)](https://github.com/ChengshuaiZhao0/SCALE) 
 
 This repository contains the official Python implementation of the framework described in the paper **"SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"**, accepted at ACL 2025.
 
@@ -14,9 +14,9 @@ This repository contains the official Python implementation of the framework des
 
 Content analysis is a foundational research method in the social sciences for breaking down unstructured text into structured, theory-informed categories. This process is often manual, labor-intensive, and time-consuming.
 
-To address these challenges, we introduce **SCALE**, a novel multi-agent framework that effectively **S**imulates **C**ollaborative **A**nalysis via **L**arge language model ag**E**nts. By harnessing LLM agents with distinct personas and incorporating various modes of human intervention, SCALE automates the content analysis workflow to produce reliable, high-quality annotations at scale.
+To address these challenges, we introduce **SCALE**, a novel multi-agent framework that effectively **S**imulates **<u>C</u>**ollaborative **<u>A</u>**nalysis via **<u>L</u>**arge language model ag**<u>E</u>**nts. By harnessing LLM agents with distinct personas and incorporating various modes of human intervention, SCALE automates the content analysis workflow to produce reliable, high-quality annotations at scale.
 
-![SCALE](figure/main.pdf)
+![SCALE](figure/main.png)
 ## The SCALE Workflow
 
 The SCALE framework mirrors the process of real-world content analysis through four primary steps, which form an iterative cycle for analysis and refinement.
@@ -76,7 +76,7 @@ scale-project/
 1.  **Clone the Repository**
 
     ```bash
-    git clone [https://github.com/ChengshuaiZhao0/SCALE.git](https://github.com/ChengshuaiZhao0/SCALE.git)
+    git clone https://github.com/ChengshuaiZhao0/SCALE.git
     ```
 
 2.  **Create a Conda Environment (Recommended)**
@@ -127,7 +127,7 @@ Once you have received the data files:
 
 ## How to Run
 
-To run the simulation, execute the `main.py` script from the root directory and specify the dataset you wish to process.
+To run the simulation, execute the `main.py` script from the root directory.
 
 ```bash
 python main.py
