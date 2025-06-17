@@ -119,6 +119,8 @@ Due to the sensitive nature of the datasets used in this research, they are not 
 
 **➡️ [Data Request Form](https://forms.gle/eUnAihddtooCePgW9)**
 
+*After submitting the form, we recommend contacting [ezhao[at]unc.edu](mailto:ezhao@unc.edu) and [czhao93[at]asu.edu](mailto:czhao93@asu.edu) to follow up on your request.*
+
 Once you have received the data files:
 
 -   Place your dataset as an `.xlsx` file inside a corresponding folder in `data/` (e.g., `data/CN-NES/data.xlsx`).
