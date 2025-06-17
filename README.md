@@ -14,7 +14,7 @@ This repository contains the official Python implementation of the framework des
 
 Content analysis is a foundational research method in the social sciences for breaking down unstructured text into structured, theory-informed categories. This process is often manual, labor-intensive, and time-consuming.
 
-To address these challenges, we introduce **SCALE**, a novel multi-agent framework that effectively **S**imulates **<u>C</u>**ollaborative **<u>A</u>**nalysis via **<u>L</u>**arge language model ag**<u>E</u>**nts. By harnessing LLM agents with distinct personas and incorporating various modes of human intervention, SCALE automates the content analysis workflow to produce reliable, high-quality annotations at scale.
+To address these challenges, we introduce **SCALE**, a novel multi-agent framework that effectively **<u>S</u>**imulates **C**ollaborative **A**nalysis via **L**arge language model ag**E**nts. By harnessing LLM agents with distinct personas and incorporating various modes of human intervention, SCALE automates the content analysis workflow to produce reliable, high-quality annotations at scale.
 
 ![SCALE](figure/main.png)
 ## The SCALE Workflow
