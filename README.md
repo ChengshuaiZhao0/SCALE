@@ -115,6 +115,12 @@ The simulation is controlled by a JSON file located in the `configs/` directory 
 
 #### Data Preparation:
 
+Due to the sensitive nature of the datasets used in this research, they are not publicly available for direct download. We are committed to upholding ethical standards for data privacy. Researchers interested in obtaining the datasets for academic and non-commercial purposes can request access by filling out the following form. Upon approval, you will receive instructions on how to access the data.
+
+**➡️ [Data Request Form](https://forms.gle/eUnAihddtooCePgW9)**
+
+Once you have received the data files:
+
 -   Place your dataset as an `.xlsx` file inside a corresponding folder in `data/` (e.g., `data/CES/data.xlsx`).
 -   The Excel file must contain a column named `Text` with the content to be analyzed.
 -   Place the initial codebook in a file named `original_rules.txt` within the same folder.
