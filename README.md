@@ -111,7 +111,7 @@ The simulation is controlled by a JSON file located in the `configs/` directory 
         -   `authority`: `collaborative` or `directive`.
 -   `persona`: Define the background and personality for each agent.
 -   `prompt`: Contains the text for all prompts used by SCALE framework.
--   `codebook_example`: Provides an example of an `original` and `updated` codebook to guide the agents during the evolution phase.
+-   `codebook_example`: Provides an in-context learning example of an `original` and `updated` codebook to guide the agents during the evolution phase.
 
 #### Data Preparation:
 
