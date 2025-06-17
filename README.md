@@ -52,11 +52,11 @@ scale-project/
 ├── main.py                   # Main entry point to run the simulation
 ├── requirements.txt          # Python dependencies
 ├── configs/                  # Directory for JSON configuration files
-│   └── CES.json
+│   └── config.json
 ├── data/                     # Directory for datasets
-│   └── CES/
+│   └── EXP/                  # An Example dataset
 │       ├── data.xlsx         # The text data for analysis
-│       └── original_rules.txt# The initial codebook
+│       └── codebook.txt# The initial codebook
 ├── results/                  # Output directory for logs and results
 ├── agents/                   # Contains all agent class definitions
 │   ├── base_agent.py
@@ -94,7 +94,7 @@ scale-project/
 
 ## Configuration
 
-The simulation is controlled by a JSON file located in the `configs/` directory (e.g., `configs/CES.json`).
+The simulation is controlled by a JSON file located in the `configs/` directory (e.g., `configs/config.json`).
 
 #### Key Configuration Options:
 
@@ -110,7 +110,7 @@ The simulation is controlled by a JSON file located in the `configs/` directory 
         -   `scope`: `targeted` or `extensive`.
         -   `authority`: `collaborative` or `directive`.
 -   `persona`: Define the background and personality for each agent.
--   `prompt`: Contains the text for all system prompts used by the agents.
+-   `prompt`: Contains the text for all prompts used by SCALE framework.
 -   `codebook_example`: Provides an example of an `original` and `updated` codebook to guide the agents during the evolution phase.
 
 #### Data Preparation:
@@ -121,9 +121,11 @@ Due to the sensitive nature of the datasets used in this research, they are not 
 
 Once you have received the data files:
 
--   Place your dataset as an `.xlsx` file inside a corresponding folder in `data/` (e.g., `data/CES/data.xlsx`).
+-   Place your dataset as an `.xlsx` file inside a corresponding folder in `data/` (e.g., `data/CN-NES/data.xlsx`).
 -   The Excel file must contain a column named `Text` with the content to be analyzed.
--   Place the initial codebook in a file named `original_rules.txt` within the same folder.
+-   Place the initial codebook in a file named `codebook.txt` within the same folder.
+
+> For reference and quick setup, we also provide a sample codebook and data (not used in the paper) in the `data/EXP` directory.
 
 ## How to Run
 
@@ -138,7 +140,7 @@ python main.py
 
 ## Citation
 
-If you use this framework in your research, please cite our paper:
+If you found this repo useful, please feel free to cite our work!
 
 ```bibtex
 @article{zhao2025scale,

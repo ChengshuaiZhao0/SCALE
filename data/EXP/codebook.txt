@@ -1,0 +1,10 @@
+CODEBOOK: Sentiment Analysis
+
+Assign one numerical code (i.e., 1, 2, or 3) to each text entry based on its predominant sentiment. 
+
+    1. Negative: The text primarily expresses negative emotions, opinions, or a critical tone. 
+        o Examples: Frustration, sadness, anger, complaints, disapproval, and criticism.
+    2. Neutral: The text expresses no discernible positive or negative sentiment. It is objective, factual, or informational. 
+        o Examples: Factual statements, objective descriptions, questions for information, and ambiguous statements.
+    3. Positive: The text primarily expresses positive emotions, opinions, or an approving tone.
+        o Examples: Happiness, joy, gratitude, praise, approval, excitement, optimism.
