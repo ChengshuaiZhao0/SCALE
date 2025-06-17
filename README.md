@@ -56,7 +56,7 @@ scale-project/
 ├── data/                     # Directory for datasets
 │   └── EXP/                  # An Example dataset
 │       ├── data.xlsx         # The text data for analysis
-│       └── codebook.txt# The initial codebook
+│       └── codebook.txt	  # The initial codebook
 ├── results/                  # Output directory for logs and results
 ├── agents/                   # Contains all agent class definitions
 │   ├── base_agent.py
@@ -125,7 +125,7 @@ Once you have received the data files:
 -   The Excel file must contain a column named `Text` with the content to be analyzed.
 -   Place the initial codebook in a file named `codebook.txt` within the same folder.
 
-> For reference and quick setup, we also provide a sample codebook and data (not used in the paper) in the `data/EXP` directory.
+> For reference and quick setup, we also provide **an example codebook and dataset** (not used in the paper) in the `data/EXP` directory.
 
 ## How to Run
 
