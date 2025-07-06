@@ -1,6 +1,6 @@
 # SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-red.svg)](https://arxiv.org/abs/2502.10937) [![GitHub](https://img.shields.io/badge/GitHub-SCALE-blue.svg)](https://github.com/ChengshuaiZhao0/SCALE) 
+[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-red.svg)](https://arxiv.org/abs/2502.10937) [![GitHub](https://img.shields.io/badge/GitHub-SCALE-blue.svg)](https://github.com/ChengshuaiZhao0/SCALE)  [![Poster](https://img.shields.io/badge/Poster-ACL2025-green.svg)](acl/poster.pdf) 
 
 This repository contains the official Python implementation of the framework described in the paper **"SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"**, accepted at ACL 2025.
 
@@ -38,8 +38,8 @@ The SCALE framework mirrors the process of real-world content analysis through f
 -   **Multi-Agent Simulation**: Deploys multiple LLM agents, each with a unique, configurable persona to foster diverse perspectives and robust discussions.
 -   **Praxis-Informed Design**: The workflow is developed in close collaboration with social scientists, ensuring it faithfully reflects the principles and standards of manual content analysis.
 -   **Human Intervention**: Provides a flexible portal for human experts to intervene in the. The intervention can be configured by both scope and role:
-    -   **Scope**: `targeted` (discussion phase only) or `extensive` (discussion and codebook evolution phases).
-    -   **Authority**: `collaborative` (agents may accept or reject advice) or `directive` (agents must follow instructions).
+    -   **Scope**: targeted (discussion phase only) or extensive (discussion and codebook evolution phases).
+    -   **Authority**: collaborative (agents may accept or reject advice) or directive (agents must follow instructions).
 -   **Highly Configurable**: The entire simulation—including agent personas, prompts, datasets, and intervention strategies—is controlled via easy-to-edit JSON configuration files.
 -   **Modular & Extensible**: Built with a clean, object-oriented architecture that separates agents, simulation logic, and utilities, making the code easy to understand and extend.
 
@@ -96,7 +96,7 @@ scale-project/
 
 The simulation is controlled by a JSON file located in the `configs/` directory (e.g., `configs/config.json`).
 
-#### Key Configuration Options:
+#### Configuration Options:
 
 -   `api_key`: Add your OpenAI API key here.
 -   `dataset_name`: The name of the dataset, which must match the folder name in `data/`.
