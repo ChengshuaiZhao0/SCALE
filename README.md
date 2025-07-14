@@ -1,10 +1,11 @@
 # SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-red.svg)](https://arxiv.org/abs/2502.10937) [![GitHub](https://img.shields.io/badge/GitHub-SCALE-blue.svg)](https://github.com/ChengshuaiZhao0/SCALE)  [![Poster](https://img.shields.io/badge/Poster-ACL2025-green.svg)](acl/poster.pdf) 
+[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-#40d9b0ff.svg)](https://arxiv.org/abs/2502.10937) [![Code](https://img.shields.io/badge/Code-GitHub-#66b3ffff.svg)](https://github.com/ChengshuaiZhao0/SCALE)[![Video](https://img.shields.io/badge/Video-YouTube-#f2806bff.svg)](https://youtu.be/Fq7cutzHdOM)[![Poster](https://img.shields.io/badge/Poster-ACL2025-#8a91faff.svg)](acl/poster.pdf) 
 
 This repository contains the official Python implementation of the framework described in the paper **"SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"**, accepted at ACL 2025.
 
 ## News
+- **[07/13/2025]** A presentation video is available on [YouTube](https://youtu.be/Fq7cutzHdOM).
 - **[06/16/2025]** An example implementation of the SCALE framework is now available!
 - **[05/16/2025]** GitHub repository created. Code release is coming soon.
 - **[05/15/2025]** Our paper has been accepted by the main conference of **ACL 2025**. 🚀
