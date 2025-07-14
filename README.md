@@ -1,6 +1,10 @@
 # SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention
 
+<<<<<<< HEAD
 [![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-#40d9b0ff.svg)](https://arxiv.org/abs/2502.10937) [![Code](https://img.shields.io/badge/Code-GitHub-#66b3ffff.svg) ](https://github.com/ChengshuaiZhao0/SCALE)[![Video](https://img.shields.io/badge/Video-YouTube-#f2806bff.svg)](https://youtu.be/Fq7cutzHdOM)[![Poster](https://img.shields.io/badge/Poster-ACL2025-#8a91faff.svg) ](acl/poster.pdf)
+=======
+[![Paper](https://img.shields.io/badge/Paper-arXiv:2502.10937-#40d9b0ff.svg)](https://arxiv.org/abs/2502.10937) [![Code](https://img.shields.io/badge/Code-GitHub-#66b3ffff.svg)] (https://github.com/ChengshuaiZhao0/SCALE)[![Video](https://img.shields.io/badge/Video-YouTube-#f2806bff.svg)](https://youtu.be/Fq7cutzHdOM) [![Poster](https://img.shields.io/badge/Poster-ACL2025-#8a91faff.svg)](acl/poster.pdf) 
+>>>>>>> 17415a2b8cdb5755f399b57d848a88c1942a7fb6
 
 This repository contains the official Python implementation of the framework described in the paper **"SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"**, accepted at ACL 2025.
 
